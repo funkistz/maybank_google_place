@@ -10,9 +10,7 @@ import usePlacesAutocomplete, {
     getGeocode,
     getLatLng,
 } from 'use-places-autocomplete';
-import useLocalStorage from '../hooks/useLocalStorage';
-
-const autocompleteService = { current: null };
+import PersonPinCircleIcon from '@mui/icons-material/PersonPinCircle';
 
 export default function GooglePlaceAutoComplete({ setCenter }) {
 
