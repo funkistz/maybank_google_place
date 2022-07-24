@@ -1,9 +1,11 @@
 import reducers from "./reducers";
-import { legacy_createStore } from "redux";
+import { applyMiddleware, legacy_createStore } from "redux";
+import thunk from 'redux-thunk';
 
 
 const store = legacy_createStore(
-    reducers
+    reducers,
+    applyMiddleware(thunk)
 )
 
 export default store;
